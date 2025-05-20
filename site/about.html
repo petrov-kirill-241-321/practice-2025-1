@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logo"> MicroRedux </a>
+
+        <div class="menu-toggle" id="mobile-menu">☰</div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html" class="active">О проекте</a></li>
+          <li><a href="team.html">Команда</a></li>
+          <li><a href="resources.html">Ресурсы</a></li>
+          <li><a href="journal.html">Журнал</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main-content">
+      <h1>О проекте MicroRedux</h1>
+
+      <section>
+        <h2>Техническая реализация</h2>
+        <p>
+          MicroRedux - это кастомная реализация Redux, созданная для глубокого
+          понимания принципов управления состоянием в JavaScript-приложениях.
+        </p>
+
+        <div class="architecture">
+          <div class="arch-diagram">
+            <img src="./assets/flux.png" alt="Архитектура MicroRedux" />
+          </div>
+          <div class="arch-features">
+            <h3>Ключевые компоненты:</h3>
+            <ul>
+              <li>Централизованное хранилище состояния</li>
+              <li>Строго однонаправленный поток данных</li>
+              <li>Оптимизированная система подписок</li>
+              <li>Полноценная поддержка middleware</li>
+              <li>Инструменты для разработчика</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Сравнение с оригинальным Redux</h2>
+        <table class="comparison-table">
+          <tr>
+            <th>Характеристика</th>
+            <th>MicroRedux</th>
+            <th>Redux</th>
+          </tr>
+          <tr>
+            <td>Размер (gzip)</td>
+            <td>3.2KB</td>
+            <td>7.1KB</td>
+          </tr>
+          <tr>
+            <td>Сложность подписок</td>
+            <td>O(1)</td>
+            <td>O(n)</td>
+          </tr>
+          <tr>
+            <td>Поддержка TypeScript</td>
+            <td>✅ Полная</td>
+            <td>✅ Полная</td>
+          </tr>
+          <tr>
+            <td>Встроенный time-travel</td>
+            <td>✅ Да</td>
+            <td>❌ Нет</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <p>© 2025 MicroRedux Project. Все права защищены.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

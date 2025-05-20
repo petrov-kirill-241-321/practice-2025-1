@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Журнал</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logo"> MicroRedux </a>
+
+        <div class="menu-toggle" id="mobile-menu">☰</div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О проекте</a></li>
+          <li><a href="team.html">Команда</a></li>
+          <li><a href="resources.html" class="active">Ресурсы</a></li>
+          <li><a href="journal.html">Журнал</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <h1>Полезные ресурсы</h1>
+
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <h2>Рекомендуемые материалы</h2>
+
+      <div class="resources">
+        <div class="resource-card">
+          <span class="resource-type type-article">Статья</span>
+          <h3 class="resource-title">Принципы Flux-архитектуры</h3>
+          <p class="resource-description">
+            Подробное объяснение паттерна Flux, который лежит в основе Redux
+          </p>
+          <a
+            href="https://medium.com/@marina.kovalyova/flux-the-react-js-application-architecture-773f515d068d"
+            class="resource-link"
+            target="_blank"
+            >Читать</a
+          >
+        </div>
+
+        <div class="resource-card">
+          <span class="resource-type type-video">Видео</span>
+          <h3 class="resource-title">Redux за 30 минут</h3>
+          <p class="resource-description">
+            Быстрый старт с Redux для начинающих разработчиков
+          </p>
+          <a
+            href="https://www.youtube.com/watch?v=C0fBnil_Im4&ab_channel=%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB%D0%9D%D0%B5%D0%BF%D0%BE%D0%BC%D0%BD%D1%8F%D1%89%D0%B8%D0%B9"
+            class="resource-link"
+            target="_blank"
+            >Смотреть</a
+          >
+        </div>
+
+        <div class="resource-card">
+          <span class="resource-type type-docs">Документация</span>
+          <h3 class="resource-title">Официальная документация Redux</h3>
+          <p class="resource-description">
+            Полное руководство по использованию Redux
+          </p>
+          <a href="https://redux.js.org" class="resource-link" target="_blank"
+            >Открыть</a
+          >
+        </div>
+
+        <div class="resource-card">
+          <span class="resource-type type-tool">Инструмент</span>
+          <h3 class="resource-title">Redux DevTools</h3>
+          <p class="resource-description">
+            Расширение для отладки Redux-приложений
+          </p>
+          <a
+            href="https://github.com/reduxjs/redux-devtools"
+            class="resource-link"
+            target="_blank"
+            >Установить</a
+          >
+        </div>
+
+        <div class="resource-card">
+          <span class="resource-type type-article">Статья</span>
+          <h3 class="resource-title">Оптимизация производительности Redux</h3>
+          <p class="resource-description">
+            Советы по улучшению производительности Redux-приложений
+          </p>
+          <a
+            href="https://habr.com/ru/articles/490526/"
+            class="resource-link"
+            target="_blank"
+            >Читать</a
+          >
+        </div>
+
+        <div class="resource-card">
+          <span class="resource-type type-docs">Документация</span>
+          <h3 class="resource-title">Redux Toolkit</h3>
+          <p class="resource-description">
+            Официальный инструментарий для эффективной работы с Redux
+          </p>
+          <a
+            href="https://redux-toolkit.js.org"
+            class="resource-link"
+            target="_blank"
+            >Открыть</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2023 MicroRedux Project. Все права защищены.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

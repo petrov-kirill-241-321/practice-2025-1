@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Главная</title>
+  </head>
+  <body>
+    <script src="./main.js" defer></script>
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logo">MicroRedux</a>
+
+        <div class="menu-toggle" id="mobile-menu">☰</div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="active">Главная</a></li>
+          <li><a href="about.html">О проекте</a></li>
+          <li><a href="team.html">Команда</a></li>
+          <li><a href="resources.html">Ресурсы</a></li>
+          <li><a href="journal.html" class="active">Журнал</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="hero">
+      <h1>MicroRedux</h1>
+      <p>Минималистичная и производительная реализация Redux</p>
+    </section>
+
+    <section>
+      <h2>Почему MicroRedux?</h2>
+      <div class="features">
+        <div class="feature-card">
+          <h3>🚀 Легковесный</h3>
+          <p>Всего 3.2KB в сжатом виде - в 2 раза меньше оригинального Redux</p>
+        </div>
+        <div class="feature-card">
+          <h3>⚡ Быстрый</h3>
+          <p>Оптимизированные алгоритмы с O(1) сложностью для подписок</p>
+        </div>
+        <div class="feature-card">
+          <h3>🔌 Совместимый</h3>
+          <p>Полная поддержка оригинального Redux API и middleware</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Быстрый старт</h2>
+      <div class="code-block">
+        <pre>
+import { createStore } from 'microredux';
+
+const counter = (state = 0, action) => {
+    switch(action.type) {
+        case 'INCREMENT': return state + 1;
+        case 'DECREMENT': return state - 1;
+        default: return state;
+    }
+};
+
+const store = createStore(counter);
+
+store.subscribe(() => {
+    console.log('State:', store.getState());
+});
+
+store.dispatch({ type: 'INCREMENT' });</pre
+        >
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 MicroRedux Project. Все права защищены.</p>
+    </footer>
+  </body>
+</html>

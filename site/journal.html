@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Журнал</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logo"> MicroRedux </a>
+
+        <div class="menu-toggle" id="mobile-menu">☰</div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О проекте</a></li>
+          <li><a href="team.html">Команда</a></li>
+          <li><a href="resources.html">Ресурсы</a></li>
+          <li><a href="journal.html" class="active">Журнал</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <h1>Журнал разработки</h1>
+
+      <div class="timeline">
+        <article class="entry left">
+          <h2 class="entry-title">Создание ядра Redux</h2>
+
+          <div class="entry-content">
+            <p>
+              Завершена работа над базовой реализацией хранилища (store).
+              Основные достижения:
+            </p>
+            <ul>
+              <li>Реализованы методы getState, subscribe и dispatch</li>
+              <li>Создана система подписок с O(1) сложностью</li>
+            </ul>
+
+            <p>
+              Обнаружена и исправлена проблема с утечкой памяти при частой
+              подписке/отписке.
+            </p>
+          </div>
+
+          <div class="entry-tags">
+            <span class="tag">Разработка</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </article>
+
+        <article class="entry right">
+          <h2 class="entry-title">Работа над документацией</h2>
+
+          <div class="entry-content">
+            <p>Завершена документации проекта. Включены следующие разделы:</p>
+
+            <ul>
+              <li>Полное API Reference с примерами</li>
+              <li>Руководство по миграции с оригинального Redux</li>
+              <li>Сравнение производительности</li>
+              <li>Рецепты для распространенных сценариев</li>
+            </ul>
+
+            <p>
+              Документация доступна в формате PDF и как интерактивная
+              веб-страница.
+            </p>
+          </div>
+
+          <div class="entry-tags">
+            <span class="tag">Документация</span>
+            <span class="tag">Markdown</span>
+          </div>
+        </article>
+
+        <article class="entry left">
+          <h2 class="entry-title">Разработка сайта проекта</h2>
+
+          <div class="entry-content">
+            <p>Запущен официальный сайт проекта. Основные особенности:</p>
+
+            <ul>
+              <li>Адаптивный дизайн для всех устройств</li>
+              <li>Интерактивные примеры кода</li>
+              <li>Система навигации между разделами</li>
+              <li>Журнал проекта с хронологией разработки</li>
+            </ul>
+
+            <p>
+              Сайт реализован на чистом HTML/CSS/JavaScript без использования
+              фреймворков.
+            </p>
+          </div>
+
+          <div class="entry-tags">
+            <span class="tag">Веб-разработка</span>
+            <span class="tag">UI/UX</span>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 MicroRedux Project. Все права защищены.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
